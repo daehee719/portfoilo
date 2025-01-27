@@ -1,9 +1,9 @@
 package com.one.portfoilo.global;
 
 
-import com.one.portfoilo.domain.User;
-import com.one.portfoilo.domain.repository.UserRepository;
-import com.one.portfoilo.jwt.JwtService;
+import com.one.portfoilo.domain.user.User;
+import com.one.portfoilo.domain.user.repository.UserRepository;
+import com.one.portfoilo.global.jwt.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

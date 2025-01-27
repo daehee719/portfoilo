@@ -1,7 +1,7 @@
-package com.one.portfoilo.domain.controller;
+package com.one.portfoilo.domain.user.controller;
 
-import com.one.portfoilo.domain.dto.UserSignUpDto;
-import com.one.portfoilo.domain.service.UserService;
+import com.one.portfoilo.domain.user.dto.UserSignUpDto;
+import com.one.portfoilo.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

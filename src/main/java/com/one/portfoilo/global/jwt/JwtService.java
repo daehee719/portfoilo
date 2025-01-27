@@ -1,8 +1,8 @@
-package com.one.portfoilo.jwt;
+package com.one.portfoilo.global.jwt;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.one.portfoilo.domain.repository.UserRepository;
+import com.one.portfoilo.domain.user.repository.UserRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.Getter;

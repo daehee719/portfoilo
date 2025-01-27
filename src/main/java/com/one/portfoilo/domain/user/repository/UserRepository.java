@@ -1,7 +1,7 @@
-package com.one.portfoilo.domain.repository;
+package com.one.portfoilo.domain.user.repository;
 
-import com.one.portfoilo.domain.SocialType;
-import com.one.portfoilo.domain.User;
+import com.one.portfoilo.domain.user.SocialType;
+import com.one.portfoilo.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

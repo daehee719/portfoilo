@@ -1,4 +1,4 @@
-package com.one.portfoilo.domain;
+package com.one.portfoilo.domain.user;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,9 +1,9 @@
-package com.one.portfoilo.domain.service;
+package com.one.portfoilo.domain.user.service;
 
-import com.one.portfoilo.domain.Role;
-import com.one.portfoilo.domain.User;
-import com.one.portfoilo.domain.dto.UserSignUpDto;
-import com.one.portfoilo.domain.repository.UserRepository;
+import com.one.portfoilo.domain.user.Role;
+import com.one.portfoilo.domain.user.User;
+import com.one.portfoilo.domain.user.dto.UserSignUpDto;
+import com.one.portfoilo.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

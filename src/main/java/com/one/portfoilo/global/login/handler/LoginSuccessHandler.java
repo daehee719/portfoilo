@@ -1,7 +1,7 @@
 package com.one.portfoilo.global.login.handler;
 
-import com.one.portfoilo.domain.repository.UserRepository;
-import com.one.portfoilo.jwt.JwtService;
+import com.one.portfoilo.domain.user.repository.UserRepository;
+import com.one.portfoilo.global.jwt.JwtService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

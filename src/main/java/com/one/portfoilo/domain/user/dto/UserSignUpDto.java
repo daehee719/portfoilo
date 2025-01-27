@@ -1,4 +1,4 @@
-package com.one.portfoilo.domain.dto;
+package com.one.portfoilo.domain.user.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
