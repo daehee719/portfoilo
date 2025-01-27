@@ -1,0 +1,10 @@
+#jwt:
+#  secretKey: 78fc0a59891acad0f6c72439cc453d7f55fef6ee7c61a726db46d1f6790a905a7ae64c7914f9610ef74c74ac80344d5e7b910a21d8687f0df44e0e9711bea174
+#
+#  access:
+#    expiration: 3600000 # 1시간(60분) (1000L(ms -> s) * 60L(s -> m) * 60L(m -> h))
+#    header: Authorization
+#
+#  refresh:
+#    expiration: 1209600000 #  (1000L(ms -> s) * 60L(s -> m) * 60L(m -> h) * 24L(h -> 하루) * 14(2주))
+#    header: Authorization-refresh
