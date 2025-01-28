@@ -51,6 +51,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
+    testImplementation 'io.rest-assured:rest-assured:5.4.0' // 추가됨
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     // Swagger(API 문서화)

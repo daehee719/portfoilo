@@ -1,6 +1,5 @@
 package com.one.portfoilo.domain.user.controller;
 
-import com.one.portfoilo.domain.user.dto.ResDto;
 import com.one.portfoilo.domain.user.dto.UserSignUpDto;
 import com.one.portfoilo.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
