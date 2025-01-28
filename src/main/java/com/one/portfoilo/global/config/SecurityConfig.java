@@ -53,7 +53,6 @@ public class SecurityConfig {
             "/js/**",
             "/favicon.ico",
             "/h2-console/**",
-
             "/api/sign-up",
 
 //            "/login/oauth2/code/**",

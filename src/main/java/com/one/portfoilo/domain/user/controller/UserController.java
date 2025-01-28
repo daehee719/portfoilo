@@ -1,28 +1,31 @@
 package com.one.portfoilo.domain.user.controller;
 
+import com.one.portfoilo.domain.user.dto.ResDto;
 import com.one.portfoilo.domain.user.dto.UserSignUpDto;
 import com.one.portfoilo.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/api")
 public class UserController {
 
     private final UserService userService;
 
     @PostMapping("/sign-up")
     public ResponseEntity<?> signUp(@RequestBody UserSignUpDto userSignUpDto) throws Exception {
-        userService.signUp(userSignUpDto);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(userService.signUp(userSignUpDto));
     }
 
-    @GetMapping("/jwt-test")
-    public ResponseEntity<?> jwtTest() {
-        return ResponseEntity.ok("jwtTest 요청 성공");
+    @GetMapping("/users")
+    public ResponseEntity<?> getAllUsers() throws Exception {
+        return ResponseEntity.ok(userService.getAllUsers());
+    }
+
+    @GetMapping("/users/{id}")
+    public ResponseEntity<?> getUser(@PathVariable Long id) throws Exception {
+        return ResponseEntity.ok(userService.getUser(id));
     }
 }
