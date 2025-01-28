@@ -18,6 +18,7 @@ public class BoardService {
     }
 
     @PostMapping("/board")
+    @Transactional
     public ResponseEntity<?> addBoard(@RequestBody AddBoardRequest request) {
         final Board board = new Board(request.title(), request.price());
 
