@@ -1,21 +1,16 @@
 package com.one.portfoilo.board;
 
+import com.one.portfoilo.domain.borad.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
-
+@SpringBootTest
 public class BoardServiceTest {
 
+    @Autowired
     private BoardService boardService;
-    private BoardPort boardPort;
-    private BoardRepository boardRepository;
-
-    @BeforeEach
-    void setUp() {
-        boardRepository = new BoardRepository();
-        boardPort = new BoardAdapter(boardRepository);
-        boardService = new BoardService(boardPort);
-    }
 
     @Test
     void 게시물등록()

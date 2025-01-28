@@ -1,8 +1,11 @@
-package com.one.portfoilo.board;
+package com.one.portfoilo.domain.borad;
+
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class BoardRepository {
     private Long sequence = 0L;
     private Map<Long, Board> persistence = new HashMap<>();

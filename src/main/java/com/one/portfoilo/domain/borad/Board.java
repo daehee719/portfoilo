@@ -1,4 +1,4 @@
-package com.one.portfoilo.board;
+package com.one.portfoilo.domain.borad;
 
 import io.jsonwebtoken.lang.Assert;
 

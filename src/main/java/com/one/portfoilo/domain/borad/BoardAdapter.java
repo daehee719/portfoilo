@@ -1,5 +1,8 @@
-package com.one.portfoilo.board;
+package com.one.portfoilo.domain.borad;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BoardAdapter implements BoardPort {
     private final BoardRepository boardRepository;
 
