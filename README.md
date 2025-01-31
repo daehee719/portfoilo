@@ -33,7 +33,7 @@
 
 ```java
 // 예시: 유닛 테스트 코드 (JUnit 5 + AssertJ)
-@DisplayName("원하는 판매상태를 가진 상품들을 반환한다.")
+    @DisplayName("원하는 판매상태를 가진 상품들을 반환한다.")
     @Test
     void findAllBySellingStatusIn()
     {
