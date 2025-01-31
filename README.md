@@ -39,14 +39,14 @@
     {
         // given
         Product product1 = Product.builder()
-                .name("건영아파트")
+                .name("뿡뿡아파트")
                 .price(4000)
                 .type(JEOUNSE)
                 .sellingStatus(SELLING)
                 .build();
 
         Product product2 = Product.builder()
-                .name("뉴서울아파트")
+                .name("빵빵아파트")
                 .price(4000)
                 .type(JEOUNSE)
                 .sellingStatus(HOLD)
@@ -61,8 +61,8 @@
         assertThat(products).hasSize(2)
                 .extracting("name", "price", "type", "sellingStatus")
                         .containsExactlyInAnyOrder(
-                                tuple("건영아파트", 4000, JEOUNSE, SELLING),
-                                tuple("뉴서울아파트", 4000, JEOUNSE, HOLD)
+                                tuple("뿡뿡아파트", 4000, JEOUNSE, SELLING),
+                                tuple("빵빵아파트", 4000, JEOUNSE, HOLD)
                         );
     }
 ```
