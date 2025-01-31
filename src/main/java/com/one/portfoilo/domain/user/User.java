@@ -8,7 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 @Builder
-@Table(name = "user")
+@Table(name = "user_entity")
 @AllArgsConstructor
 public class User {
 

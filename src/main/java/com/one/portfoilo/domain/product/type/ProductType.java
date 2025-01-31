@@ -1,4 +1,4 @@
-package com.one.portfoilo.domain.product;
+package com.one.portfoilo.domain.product.type;
 
 import lombok.RequiredArgsConstructor;
 

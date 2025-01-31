@@ -1,9 +1,10 @@
-package com.one.portfoilo.domain.product;
+package com.one.portfoilo.domain.product.dto;
 
-import jakarta.persistence.*;
+import com.one.portfoilo.domain.product.entity.Product;
+import com.one.portfoilo.domain.product.type.ProductSellingStatus;
+import com.one.portfoilo.domain.product.type.ProductType;
 import lombok.Builder;
 import lombok.Getter;
-import org.springframework.security.core.parameters.P;
 
 @Getter
 @Builder
@@ -12,7 +13,7 @@ public class ProductResponse {
     private int price;
     private String name;
     private ProductType type;
-    private ProductSellingType sellingType;
+    private ProductSellingStatus sellingType;
 
     public static ProductResponse of(Product product)
     {
@@ -21,7 +22,7 @@ public class ProductResponse {
                 .price(product.getPrice())
                 .name(product.getName())
                 .type(product.getType())
-                .sellingType(product.getSellingType())
+                .sellingType(product.getSellingStatus())
                 .build();
     }
 
