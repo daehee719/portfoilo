@@ -50,7 +50,7 @@ class ProductRepositoryTest {
         List<Product> products = productRepository.findBySellingStatusIn(List.of(SELLING,HOLD));
 
         // then
-        assertThat(products)
+        assertThat(products).hasSize(2)
                 .extracting("name", "price", "type", "sellingStatus")
                         .containsExactlyInAnyOrder(
                                 tuple("건영아파트", 4000, JEOUNSE, SELLING),
