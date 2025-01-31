@@ -2,7 +2,9 @@ package com.one.portfoilo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+@EnableJpaAuditing
 @SpringBootApplication(scanBasePackages = "com.one.portfoilo")
 public class PortfoiloApplication {
 
