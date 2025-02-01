@@ -31,38 +31,9 @@
 
 - **Assertions**: AssertJ를 활용하여 테스트에서 사용할 수 있는 직관적이고 가독성 높은 assertion을 사용했습니다. 예를 들어, 객체의 상태나 리스트의 크기, 특정 값이 예상대로 존재하는지 쉽게 검증할 수 있었습니다.
 
-```java
-// 예시: 유닛 테스트 코드 (JUnit 5 + AssertJ)
-    @DisplayName("원하는 판매상태를 가진 상품들을 반환한다.")
-    @Test
-    void findAllBySellingStatusIn()
-    {
-        // given
-        Product product1 = Product.builder()
-                .name("뿡뿡아파트")
-                .price(4000)
-                .type(JEOUNSE)
-                .sellingStatus(SELLING)
-                .build();
+## 마일스톤
 
-        Product product2 = Product.builder()
-                .name("빵빵아파트")
-                .price(4000)
-                .type(JEOUNSE)
-                .sellingStatus(HOLD)
-                .build();
+이슈에 대한 자세한 내용은 [마일스톤 목록](https://github.com/daehee719/portfoilo/milestones)에서 확인하세요.
+## 이슈
 
-        productRepository.saveAll(List.of(product1, product2));
-
-        // when
-        List<Product> products = productRepository.findBySellingStatusIn(List.of(SELLING,HOLD));
-
-        // then
-        assertThat(products).hasSize(2)
-                .extracting("name", "price", "type", "sellingStatus")
-                        .containsExactlyInAnyOrder(
-                                tuple("뿡뿡아파트", 4000, JEOUNSE, SELLING),
-                                tuple("빵빵아파트", 4000, JEOUNSE, HOLD)
-                        );
-    }
-```
+이슈에 대한 자세한 내용은 [이슈 목록](https://github.com/daehee719/portfoilo/issues)에서 확인하세요.
