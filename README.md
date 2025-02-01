@@ -33,7 +33,7 @@
 
 ## 마일스톤
 
-이슈에 대한 자세한 내용은 [마일스톤 목록](https://github.com/daehee719/portfoilo/milestones)에서 확인하세요.
+마일스톤에 대한 자세한 내용은 [마일스톤 목록](https://github.com/daehee719/portfoilo/milestones)에서 확인하세요.
 ## 이슈
 
 이슈에 대한 자세한 내용은 [이슈 목록](https://github.com/daehee719/portfoilo/issues)에서 확인하세요.
