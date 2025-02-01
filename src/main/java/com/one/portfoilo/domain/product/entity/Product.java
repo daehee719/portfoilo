@@ -8,7 +8,7 @@ import lombok.*;
 
 @Entity
 @NoArgsConstructor
-@Getter
+@Getter @Setter
 @Builder
 @AllArgsConstructor
 public class Product extends BaseEntity {
@@ -16,6 +16,8 @@ public class Product extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String productNumber;
 
     private int price;
 
